@@ -19,7 +19,7 @@ SITE_TITLE = "JS"
 # (Optional) Site title in browser tab (leave blank to use SITE_TITLE)
 SITE_TITLE_TAB = ""
 # (REQUIRED) Netlify site URL
-SITE_URL = "golden-blancmange-064ce8.netlify.app"
+SITE_URL = "https://golden-blancmange-064ce8.netlify.app/"
 # (Optional) Site Timezone
 TIMEZONE = "America/Chicago"
 ZOLA_VERSION = "0.15.2"
