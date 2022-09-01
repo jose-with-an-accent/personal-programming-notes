@@ -7,6 +7,6 @@ Angular has a bunch of special syntax to simplify things.
 Decorators are functions that add more information to code. There are a few noteworthy enough.
 - ``ViewRef`` is used to get access to the a certain element's JavaScript properties and methods. add a `#name` to the HTML.
 - `Input` is used to get an Angular component's properties.
-- `Output` is used to do something. idk.
+- `Output` is used to hook up events, for example. 
 # Best Practices
 Camel Case! Make sure variables and functions are named with the first letter lowercase, and all subsequent words' first letters uppercase!

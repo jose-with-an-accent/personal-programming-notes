@@ -5,14 +5,14 @@ One of the things that I've found lacking in some programming training is how to
 3. Understand what different errors mean.
 
 ## Understand problems and how to break them down
-Google is a great tool. Look up what your assigned UI element looks like. Look at images of how one should be. Maybe there's even some basic code that you can base your solution off of.
+Google is a great tool. Look up what your UI element looks like. Look at images of how one should be. Maybe there's even some basic code that fits to your problem, with some adaptations done.
 ## Google things
 Say we did not know how to do something. We'd then have to search on Google to find different solutions. Here are some tips to make searching as smooth as possible:
 - Include the technology's name in the search query.
 - Add some context to your search.
 
 # Understand errors
-This is much more dependent on your 
+This is much more dependent on your programming language. If you're developing a project with Angular, there are several places like the terminal, the browser console, or the page itself where there can be errors. 
 
 # Examples
 One of the things we did during the internship was to remove dependencies from certain components. We did this, for example, with the breadcrumb component, where it was previously supplied via primeNG, and was changed to use our own Angular code in the end.
@@ -21,10 +21,11 @@ One of the things we did during the internship was to remove dependencies from c
 
 Here is where the basic training in whatever programming language you're using is. In our Angular case, we know there's a bunch of attributes and properties we can use (more [here](angular%20reference). We need to iterate through an array.
 
-**Google things.** 
-Examples: 
+**Understand errors.**
+
+**Google things.** Examples: 
 - how to iterate angular 
-- loop through array javascript
+- display object in angular
 - app breaks after angular custom webpack 
 
 **Understand what different errors mean and basic steps.** There's a bunch of stuff in our code that can break. Try undoing changes quickly with ctrl+z (or cmd+z) to see where your code breaks. Remove ``node_modules``.
