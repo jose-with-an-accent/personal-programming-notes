@@ -19,7 +19,7 @@ One of the things we did during the internship was to remove dependencies from c
 
 **Understand a problem.** In our instance, we would need to separate the problem we're trying to solve into different mini-problems. How does a breadcrumb look? How do I accept the data that contains the routes? How do I display it, with its particular styling?
 
-Here is where the basic training in whatever programming language you're using is. In our Angular case, we know there's a bunch of attributes and properties we can use (more [here](angular%20reference). We need to iterate through an array.
+Here is where the basic training in whatever programming language you're using is. In our Angular case, we know there's a bunch of attributes and properties we can use (reference [here](angular%20reference)). We need to iterate through an array.
 
 **Understand errors.**
 

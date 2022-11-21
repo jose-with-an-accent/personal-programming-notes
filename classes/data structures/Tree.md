@@ -1,0 +1,1 @@
+A tree is a data structure that contains a bunch of stuff.
