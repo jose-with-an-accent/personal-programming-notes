@@ -20,6 +20,9 @@ Detailed documentation is here.
 
 If we want to build our new image, we do `docker build . -t hello_world`. We also run `docker run -t hello_world ` to actually run it, and if things go according to plan, we have a simple hello world program.
 
-Alpine Linux is a very simple version of Linux. 
+Alpine Linux is a very simple version of Linux, which means it's used to build other docker images. 
 
 [[Docker Compose]] is an important program to learn too. It's an alternative way to define a container, with its own images, ports, and other configs.
+
+## Alternatives
+The main alternative is podman. As far as I can tell, it's used because big companies have to pay licensing costs to the docker company. It doesn't hurt for personal computers.

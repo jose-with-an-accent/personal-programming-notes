@@ -28,7 +28,7 @@ This is the documentation for Rust packages.
 Because this is a system programming language, it has to deal with memory in different ways. A program may contain data that doesn't change (which can be especially optimized), or data that does change. 
 
 ## `trait`s, `impl`s, and `struct`s
-Rust is not exactly object-oriented. It has `trait`s which define behaviors that are required for different `impl`s. It also allows you to derive traits from multiple sources, which means that you sometimes you need to import specific traits to get functionality. Thankfully, a lot of this is handled by the compiler/
+Rust is not exactly object-oriented. It has `trait`s which define behaviors that are required for different `impl`s (implementations). It also allows you to derive traits from multiple sources, which means that you sometimes you need to import specific traits to get functionality. Thankfully, a lot of this is handled by the compiler so you get alerts early in the process.
 ## Threading support
 One of the important parts for distributed systems is support for threading and various utilities. Threads are easy enough to implement, like this:
 ```rust
@@ -59,4 +59,5 @@ ask_for_field(field);
 println!("{}", field); // THIS WILL RETURN AN ERROR!
 }
 ```
+This is also the hardest part to understand, given that sometimes the automatic lifetime checking doesn't exist. Which means that sometimes you have to add `'static` to variables, and it gets even more complicated with UI controls and other parts.
 There was a lot of useful documentation on the Rust website, and I also used a book to help explain some concepts.
