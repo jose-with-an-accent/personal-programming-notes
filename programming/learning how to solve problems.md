@@ -1,8 +1,8 @@
 # Summary
 One of the things that I've found lacking in some programming training is how to solve problems independently. While you may have received training on how to do things with a  technology in particular, converting an idea into code is something that can be challenging at times; hence why I decided to create this doc.
-1. Understand problems and how to break them down.
-2. Google things.
-3. Understand what different errors mean.
+	1. Understand problems and how to break them down.
+1. Google things.
+2. Understand what different errors mean.
 
 ## Understand problems and how to break them down
 Google is a great tool. Look up what your UI element looks like. Look at images of how one should be. Maybe there's even some basic code that fits to your problem, with some adaptations done.
