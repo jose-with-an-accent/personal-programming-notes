@@ -7,7 +7,7 @@ Similarly to C, it has a main function that is launched when the program starts.
 
 ## Benefits
 - Low-level
-- Sidesteps a lot of pitfalls by clearly defining how to return an error or other bits of data
+- Sidesteps a lot of pitfalls by clearly defining how to return an error, whether there was a piece of data found, and more.
 
 # The Rust Ecosystem
 
@@ -22,6 +22,8 @@ Wanting to sidestep a lot of the issues that come from loosely structured progra
 
 ## crates.io
 This is the documentation for Rust packages.
+
+There are many more pieces of code that `cargo` can use/run. For example, `cargo add` was added recently and it makes adding packages easier - previously you had to add them to `cargo.toml`. 
 
 # The more quirky parts
 ## Mutability & Immutability
@@ -41,9 +43,11 @@ fn main() {
 	})
 }
 ```
-However, things like mutexes, read/write locks, and other portions are required for us to actually do important stuff.
+However, things like [[Keeping Sync#Mutexes]], [[Keeping Sync#RwLock]], and [[Keeping Sync#Arc/Rc]] will probably be required to do real work, as passing data around is important. It's less hard than keeping track of things in C, however,  so that's a plus.
 ## Borrowing & Ownership
-Its system of borrowing and ownership is *the* unique aspect of the programming language. Once something's passed to a different scope (function), it is given to that function, and the parent doesn't have it anymore.
+Its system of borrowing and ownership is *the* unique aspect of the programming language. It replaces the usual garbage-collection or reference-counting systems found in higher-level programming, and C's shoot-yourself-in-the-foot manual memory management. 
+
+Once something's passed to a different scope (function), it is given to that function, and the parent doesn't have it anymore.
 ```rust
 fn main() {
 let field = "Name";
@@ -59,5 +63,5 @@ ask_for_field(field);
 println!("{}", field); // THIS WILL RETURN AN ERROR!
 }
 ```
-This is also the hardest part to understand, given that sometimes the automatic lifetime checking doesn't exist. Which means that sometimes you have to add `'static` to variables, and it gets even more complicated with UI controls and other parts.
-There was a lot of useful documentation on the Rust website, and I also used a book to help explain some concepts.
+This is also the hardest part to understand, given that sometimes the automatic lifetime checking doesn't work right. Which means that sometimes you have to add `'static` or `'a` to variables, and it gets even more complicated with UI controls and other parts.
+Thankfully, a lot of times the compiler will give up hints that correct you when the program is wrong. There's also a lot of useful documentation on the Rust website, a few "books" (just online written material like Rust by Example) and I also used a book to help explain some concepts.
